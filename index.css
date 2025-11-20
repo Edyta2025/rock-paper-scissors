@@ -1,11 +1,31 @@
 body {
     color: rgb(53, 69, 148);
     background-color: #f0d1a9;
-    height: 100vh;
+    font-size: 24px;
+}
+
+.container {
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+}
+
+.playerContainer {
+   display: flex;
+   align-items: center;
+}
+
+.player {
+  margin-right: 16px;
+}
+.playerScore, .computerScore {
+    color: rgb(53, 69, 148);
+    /* font-size: 16px; */
+    background-color: #fff;
+    padding: 8px 24px;
+    border: solid 2px rgb(53, 69, 148);
+    border-radius: 5px;
 }
 
 button {
