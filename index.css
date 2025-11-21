@@ -21,7 +21,6 @@ body {
 }
 .playerScore, .computerScore {
     color: rgb(53, 69, 148);
-    /* font-size: 16px; */
     background-color: #fff;
     padding: 8px 24px;
     border: solid 2px rgb(53, 69, 148);

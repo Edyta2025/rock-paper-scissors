@@ -15,6 +15,7 @@ function handler () {
 
 let randonNumber = Math.floor(Math.random() * 3) + 1;
 
+
 if (randonNumber === 1) {
    computerPlayer = "scissors";
 } else if (randonNumber === 2) {
@@ -76,18 +77,19 @@ if (playerOne === "paper") {
 
 // counter
 
-if (palyerScore > 1 || computerScore > 1){
+if (palyerScore > 1){
     palyerScore = 0;
     computerScore = 0;
     palyerScoreTxt.innerHTML = palyerScore;
     computerScoreTxt.innerHTML = computerScore;
-   if (palyerScore > computerScore){
-    alert("Player won the game")
-   } else {
-    alert("Computer won the game")
-   };
-}
-
+    alert("Player won the Game");
+} else if (computerScore > 1) {
+    palyerScore = 0;
+    computerScore = 0;
+    palyerScoreTxt.innerHTML = palyerScore;
+    computerScoreTxt.innerHTML = computerScore;
+    alert("Computer won the Game");
+};
 };
 
 
